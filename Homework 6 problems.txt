@@ -1,0 +1,30 @@
+inOrder(a,b,c) 
+Given three ints, a b c, return true if b is greater than a, and c is greater than b. However, with the exception that if "bOk" is true, b does not need to be greater than a.  - Siddhi Krishna
+
+intMax(a,b,c) - Given three int values, A B C, return the largest. (Iain Crosby)
+
+isPrime(a) determines if the value a is a prime number or not. If it is prime, it also returns the factors of a - Siddhi Krishna
+
+lastDigit(int a, int b)- Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. (Sara Shahanaghi)
+
+lessBy10(int a, int b, int c)-Given three ints, a b c, return true if one of them is 10 or more less than one of the others.
+
+makeChocolate - We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). Return the number of small bars to use, assuming we always use big bars before small bars. Return -1 if it can't be done. (Taha Bakhtiyar)
+
+maxSpan(int[] nums) Consider the leftmost and righmost appearances of some value in an array. We'll say that the "span" is the number of elements between the two inclusive. A single value has a span of 1. Returns the largest span found in the given array. (Efficiency is not a priority.). (Array-3) - Stuart Davis
+
+nearOnes(a) - returns true if a is within 10 of 100 or 1000 -Livia Bell
+
+parrot_trouble(talking, hour) - We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.  -Kai Wu
+
+sameFirstLast(x) Given an array, returns 1 if the first and last value are equal, returns 0 otherwise. - Ian Reichek
+
+strCount(s,sub) - Given a string and a non-empty substring sub, compute recursively the number of times that sub appears in the string, without the sub strings overlapping. -Ritu Pradhan
+
+strDist(string, substring) Given a string and a non-empty substring sub, compute recursively the largest substring which starts and ends with sub and return its length. - Josh S
+
+stringE(s) - Return true if the given string contains between 1 and 3 'e' chars. - Liz Li
+
+teaParty - We are having a party with amounts of tea and candy. Return the int outcome of the party encoded as 0=bad, 1=good, or 2=great. A party is good (1) if both tea and candy are at least 5. However, if either tea or candy is at least double the amount of the other one, the party is great (2). However, in all cases, if either tea or candy is less than 5, the party is always bad (0).  - Sean Kilachand
+
+triangle(int rows): We have triangle made of blocks. The topmost row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows. --Robin Jha

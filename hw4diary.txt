@@ -1,0 +1,382 @@
+Test groupNoAdj
+         groupNoAdj(1, [2 5 10 4 ], 12) 1 -> 1
+         groupNoAdj(1, [2 5 10 4 ], 14) 0 -> 0
+         groupNoAdj(1, [2 5 10 4 ], 7) 0 -> 0
+         groupNoAdj(1, [2 5 10 4 2 ], 7) 1 -> 1
+         groupNoAdj(1, [2 5 10 4 ], 9) 1 -> 1
+         groupNoAdj(1, [10 2 2 3 3 ], 15) 1 -> 1
+         groupNoAdj(1, [10 2 2 3 3 ], 7) 0 -> 0
+         groupNoAdj(1, [ ], 0) 1 -> 1
+         groupNoAdj(1, [1 ], 1) 1 -> 1
+         groupNoAdj(1, [9 ], 1) 0 -> 0
+         groupNoAdj(1, [9 ], 0) 1 -> 1
+         groupNoAdj(1, [5 10 4 1 ], 11) 1 -> 1
+There were 0 errors.
+
+Test groupSum
+         groupSum(1, [2 4 8 ], 10) 1 -> 1
+         groupSum(1, [2 4 8 ], 14) 1 -> 1
+         groupSum(1, [2 4 8 ], 9) 0 -> 0
+         groupSum(1, [2 4 8 ], 8) 1 -> 1
+         groupSum(2, [2 4 8 ], 8) 1 -> 1
+         groupSum(2, [2 4 8 ], 2) 0 -> 0
+         groupSum(1, [1 ], 1) 1 -> 1
+         groupSum(1, [9 ], 1) 0 -> 0
+         groupSum(2, [9 ], 0) 1 -> 1
+         groupSum(1, [ ], 0) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 17) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 15) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 9) 1 -> 1
+         groupSum(1, [10 -1 ], 9) 1 -> 1
+         groupSum(1, [10 -5 ], 9) 0 -> 0
+There were 0 errors.
+
+Test groupSum6
+. Test  1 | groupSum6([5 6 2], 8)
+. Test  2 | groupSum6([5 6 2], 9)
+. Test  3 | groupSum6([5 6 2], 7)
+. Test  4 | groupSum6([], 1)
+. Test  5 | groupSum6([10], 0)
+. Test  6 | groupSum6([], 0)
+. Test  7 | groupSum6([9], 1)
+. Test  8 | groupSum6([3 2 4 6], 8)
+. Test  9 | groupSum6([1 6 2 6 5], 16)
+. Test 10 | groupSum6([1 6 2 6 5], 14)
+. Test 11 | groupSum6([1 6 2 6 5], 15)
+. Test 12 | groupSum6([1 6 2 6 4], 4)
+. Test 13 | groupSum6([], 0)
+. Test 14 | groupSum6([6 5 6], 0)
+There were 0 errors.
+
+Test intMax
+      | intMax(1,2,3)=3
+      | intMax(12,44,15)=44
+      | intMax(98,75,20)=98
+      | intMax(111,2000,8956)=8956
+      | intMax(30,40,5000)=5000
+      | intMax(111,1111,11111)=11111
+      | intMax(7463837,9.287231e+009,90238)=9.287231e+009
+      | intMax(0,0,1)=1
+      | intMax(1,1,1)=1
+      | intMax(0,0,0)=0
+There were 0 errors.
+
+Test lastDigit
+      | lastDigit(10,10)=1
+      | lastDigit(19,18)=0
+      | lastDigit(1002,102)=1
+      | lastDigit(1000,1001)=0
+      | lastDigit(111,22)=0
+      | lastDigit(23,3)=1
+      | lastDigit(11,0)=0
+      | lastDigit(76,76)=1
+      | lastDigit(1000,0)=1
+      | lastDigit(5,34)=0
+      | lastDigit(115,235)=1
+      | lastDigit(1192,1191)=0
+      | lastDigit(-12345,34545)=1
+There were 0 errors.
+
+Test lessBy10
+      lessby10(5,5,5) = 0
+      lessby10(4,5,14) = 1
+      lessby10(14,5,4) = 1
+      lessby10(-3,3,-2) = 0
+      lessby10(-10,-20,1) = 1
+      lessby10(4,13,-11) = 1
+      lessby10(200,209,190) = 1
+      lessby10(-1,8,-11) = 1
+      lessby10(3,3,3) = 0
+      lessby10(1,9,56) = 1
+      lessby10(250,100,0) = 1
+There were 0 errors.
+
+Test maxSpan
+        maxSpan( [ 0 ] ) -> 1
+        maxSpan( [ 0 0 ] ) -> 2
+        maxSpan( [ 0 1 0 ] ) -> 3
+        maxSpan( [ 0 1 0 1 0 ] ) -> 5
+        maxSpan( [ 0 1 0 1 ] ) -> 3
+        maxSpan( [ 0 1 2 1 3 2 4 0 ] ) -> 8
+        maxSpan( [ 0 1 0 2 3 3 2 ] ) -> 4
+        maxSpan( [  ] ) -> 0
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 10 ] ) -> 1
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 ] ) -> 24
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 1 ] ) -> 24
+        maxSpan( [ 0 0 0 0 0 1 0 0 1 ] ) -> 8
+There were 0 errors.
+
+Test nearOnes
+      | nearOnes(75)=0
+      | nearOnes(91)=1
+      | nearOnes(1002)=1
+      | nearOnes(202)=0
+      | nearOnes(5555)=0
+      | nearOnes(1234)=0
+      | nearOnes(500)=0
+      | nearOnes(108)=1
+      | nearOnes(10101)=0
+There were 0 errors.
+
+Test parrot_trouble
+      | parrot_trouble(1, 1) = 1
+      | parrot_trouble(0, 20) = 0
+      | parrot_trouble(1, 13) = 0
+      | parrot_trouble(0, 0) = 0
+      | parrot_trouble(1, 21) = 1
+      | parrot_trouble(1, 12) = 0
+      | parrot_trouble(0, 7) = 0
+      | parrot_trouble(1, 1) = 1
+      | parrot_trouble(0, 22) = 0
+      | parrot_trouble(1, 11) = 0
+      | parrot_trouble(1, 7) = 0
+      | parrot_trouble(1, 22) = 1
+There were 0 errors.
+
+Test sameFirstLast
+sameFirstLast([1 2 3 4 5 6 7] = False.   | no error 
+sameFirstLast([1.1 2.2 3.3 4.4] = False.   | no error 
+sameFirstLast([6 1 1 1 6] = True.   | no error 
+sameFirstLast([1 1 1 1] = True.   | no error 
+sameFirstLast([0 1 1 1 0] = True.   | no error 
+sameFirstLast([1 2 3 4 5 6 7 7] = True  | no error 
+There were 0 errors.
+
+Test strCount
+      strCount(catcowcat,cat)=2
+      strCount(catcowcat,cow)=1
+      strCount(catcowcat,dog)=0
+      strCount(cacattcowcat,cat)=2
+      strCount(xyx,x)=2
+      strCount(iiijj,jj)=1
+      strCount(iiijj,j)=2
+      strCount(ababababa,aba)=2
+      strCount(ababababa, )=0
+      strCount(ababababa,b)=4
+      strCount(,)=0
+There were 0 errors.
+
+Test stringE
+        stringE() -> 0
+        stringE(abecd) -> 1
+        stringE(abeecd) -> 1
+        stringE(abecde) -> 1
+        stringE(eabcde) -> 1
+        stringE(eee) -> 1
+        stringE(eEeabcde) -> 1
+        stringE(eeabecde) -> 0
+        stringE(This is a string) -> 0
+There were 0 errors.
+
+Test triangle
+        triangle(5)->15
+        triangle(1)->1
+        triangle(0)->0
+        triangle(4)->10
+        triangle(6)->21
+        triangle(7)->28
+        triangle(8)->36
+        triangle(2)->3
+        triangle(3)->6
+        triangle(9)->45
+        triangle(10)->55
+        triangle(12)->78
+There were 0 errors.
+
+Test groupNoAdj
+         groupNoAdj(1, [2 5 10 4 ], 12) 1 -> 1
+         groupNoAdj(1, [2 5 10 4 ], 14) 0 -> 0
+         groupNoAdj(1, [2 5 10 4 ], 7) 0 -> 0
+         groupNoAdj(1, [2 5 10 4 2 ], 7) 1 -> 1
+         groupNoAdj(1, [2 5 10 4 ], 9) 1 -> 1
+         groupNoAdj(1, [10 2 2 3 3 ], 15) 1 -> 1
+         groupNoAdj(1, [10 2 2 3 3 ], 7) 0 -> 0
+         groupNoAdj(1, [ ], 0) 1 -> 1
+         groupNoAdj(1, [1 ], 1) 1 -> 1
+         groupNoAdj(1, [9 ], 1) 0 -> 0
+         groupNoAdj(1, [9 ], 0) 1 -> 1
+         groupNoAdj(1, [5 10 4 1 ], 11) 1 -> 1
+         groupNoAdj(1, [1 2 3 4 5 ], 13) 0 -> 0
+There were 0 errors.
+
+Test groupSum
+         groupSum(1, [2 4 8 ], 10) 1 -> 1
+         groupSum(1, [2 4 8 ], 14) 1 -> 1
+         groupSum(1, [2 4 8 ], 9) 0 -> 0
+         groupSum(1, [2 4 8 ], 8) 1 -> 1
+         groupSum(2, [2 4 8 ], 8) 1 -> 1
+         groupSum(2, [2 4 8 ], 2) 0 -> 0
+         groupSum(1, [1 ], 1) 1 -> 1
+         groupSum(1, [9 ], 1) 0 -> 0
+         groupSum(2, [9 ], 0) 1 -> 1
+         groupSum(1, [ ], 0) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 17) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 15) 1 -> 1
+         groupSum(1, [10 2 2 5 ], 9) 1 -> 1
+         groupSum(1, [10 -1 ], 9) 1 -> 1
+         groupSum(1, [10 -5 ], 9) 0 -> 0
+         groupSum(1, [15 -15 ], 0) 1 -> 1
+There were 0 errors.
+
+Test groupSum6
+. Test  1 | groupSum6([5 6 2], 8)
+. Test  2 | groupSum6([5 6 2], 9)
+. Test  3 | groupSum6([5 6 2], 7)
+. Test  4 | groupSum6([], 1)
+. Test  5 | groupSum6([10], 0)
+. Test  6 | groupSum6([], 0)
+. Test  7 | groupSum6([9], 1)
+. Test  8 | groupSum6([3 2 4 6], 8)
+. Test  9 | groupSum6([1 6 2 6 5], 16)
+. Test 10 | groupSum6([1 6 2 6 5], 14)
+. Test 11 | groupSum6([1 6 2 6 5], 15)
+. Test 12 | groupSum6([1 6 2 6 4], 4)
+. Test 13 | groupSum6([], 0)
+. Test 14 | groupSum6([6 5 6], 0)
+There were 0 errors.
+
+Test intMax
+      | intMax(1,2,3)=3
+      | intMax(12,44,15)=44
+      | intMax(98,75,20)=98
+      | intMax(111,2000,8956)=8956
+      | intMax(30,40,5000)=5000
+      | intMax(111,1111,11111)=11111
+      | intMax(7463837,9.287231e+009,90238)=9.287231e+009
+      | intMax(0,0,1)=1
+      | intMax(1,1,1)=1
+      | intMax(0,0,0)=0
+      | intMax(-100,4,0)=4
+There were 0 errors.
+
+Test lastDigit
+      | lastDigit(10,10)=1
+      | lastDigit(19,18)=0
+      | lastDigit(1002,102)=1
+      | lastDigit(1000,1001)=0
+      | lastDigit(111,22)=0
+      | lastDigit(23,3)=1
+      | lastDigit(11,0)=0
+      | lastDigit(76,76)=1
+      | lastDigit(1000,0)=1
+      | lastDigit(5,34)=0
+      | lastDigit(115,235)=1
+      | lastDigit(1192,1191)=0
+      | lastDigit(-12345,34545)=1
+      | lastDigit(0,100)=1
+There were 0 errors.
+
+Test lessBy10
+      lessby10(5,5,5) = 0
+      lessby10(4,5,14) = 1
+      lessby10(14,5,4) = 1
+      lessby10(-3,3,-2) = 0
+      lessby10(-10,-20,1) = 1
+      lessby10(4,13,-11) = 1
+      lessby10(200,209,190) = 1
+      lessby10(-1,8,-11) = 1
+      lessby10(3,3,3) = 0
+      lessby10(1,9,56) = 1
+      lessby10(250,100,0) = 1
+      lessby10(-10,0,4) = 1
+There were 0 errors.
+
+Test maxSpan
+        maxSpan( [ 0 ] ) -> 1
+        maxSpan( [ 0 0 ] ) -> 2
+        maxSpan( [ 0 1 0 ] ) -> 3
+        maxSpan( [ 0 1 0 1 0 ] ) -> 5
+        maxSpan( [ 0 1 0 1 ] ) -> 3
+        maxSpan( [ 0 1 2 1 3 2 4 0 ] ) -> 8
+        maxSpan( [ 0 1 0 2 3 3 2 ] ) -> 4
+        maxSpan( [  ] ) -> 0
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 10 ] ) -> 1
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 ] ) -> 24
+        maxSpan( [ 0 1 2 3 4 5 6 7 8 9 1 9 9 9 9 9 9 9 9 9 9 9 9 0 1 ] ) -> 24
+        maxSpan( [ 0 0 0 0 0 1 0 0 1 ] ) -> 8
+        maxSpan( [ 0 0 1 1 ] ) -> 2
+There were 0 errors.
+
+Test nearOnes
+      | nearOnes(75)=0
+      | nearOnes(91)=1
+      | nearOnes(1002)=1
+      | nearOnes(202)=0
+      | nearOnes(5555)=0
+      | nearOnes(1234)=0
+      | nearOnes(500)=0
+      | nearOnes(108)=1
+      | nearOnes(10101)=0
+      | nearOnes(1008)=1
+There were 0 errors.
+
+Test parrot_trouble
+      | parrot_trouble(1, 1) = 1
+      | parrot_trouble(0, 20) = 0
+      | parrot_trouble(1, 13) = 0
+      | parrot_trouble(0, 0) = 0
+      | parrot_trouble(1, 21) = 1
+      | parrot_trouble(1, 12) = 0
+      | parrot_trouble(0, 7) = 0
+      | parrot_trouble(1, 1) = 1
+      | parrot_trouble(0, 22) = 0
+      | parrot_trouble(1, 11) = 0
+      | parrot_trouble(1, 7) = 0
+      | parrot_trouble(1, 22) = 1
+      | parrot_trouble(0, 10) = 0
+There were 0 errors.
+
+Test sameFirstLast
+sameFirstLast([1 2 3 4 5 6 7]) = False.   | no error 
+sameFirstLast([1.1 2.2 3.3 4.4]) = False.   | no error 
+sameFirstLast([6 1 1 1 6]) = True.   | no error 
+sameFirstLast([1 1 1 1]) = True.   | no error 
+sameFirstLast([0 1 1 1 0]) = True.   | no error 
+sameFirstLast([1 2 3 4 5 6 7 7]) = True  | no error 
+sameFirstLast([2]) = True  | no error 
+There were 0 errors.
+
+Test strCount
+      strCount(catcowcat,cat)=2
+      strCount(catcowcat,cow)=1
+      strCount(catcowcat,dog)=0
+      strCount(cacattcowcat,cat)=2
+      strCount(xyx,x)=2
+      strCount(iiijj,jj)=1
+      strCount(iiijj,j)=2
+      strCount(ababababa,aba)=2
+      strCount(ababababa, )=0
+      strCount(ababababa,b)=4
+      strCount(,)=0
+      strCount(racecar,racecar)=1
+There were 0 errors.
+
+Test stringE
+        stringE() -> 0
+        stringE(abecd) -> 1
+        stringE(abeecd) -> 1
+        stringE(abecde) -> 1
+        stringE(eabcde) -> 1
+        stringE(eee) -> 1
+        stringE(eEeabcde) -> 1
+        stringE(eeabecde) -> 0
+        stringE(This is a string) -> 0
+        stringE(eek!) -> 1
+There were 0 errors.
+
+Test triangle
+        triangle(5)->15
+        triangle(1)->1
+        triangle(0)->0
+        triangle(4)->10
+        triangle(6)->21
+        triangle(7)->28
+        triangle(8)->36
+        triangle(2)->3
+        triangle(3)->6
+        triangle(9)->45
+        triangle(10)->55
+        triangle(12)->78
+        triangle(11)->66
+There were 0 errors.
+
